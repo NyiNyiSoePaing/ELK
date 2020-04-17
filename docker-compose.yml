@@ -4,9 +4,9 @@ services:
   elasticsearch:
     build:
       context: elasticsearch/
-      container_name: elasticsearch
       args:
         ELK_VERSION: $ELK_VERSION
+    container_name: elasticsearch
     volumes:
       - type: bind
         source: ./elasticsearch/config/elasticsearch.yml
@@ -30,9 +30,9 @@ services:
   kibana:
     build:
       context: kibana/
-      container_name: kibana
       args:
         ELK_VERSION: $ELK_VERSION
+    container_name: kibana
     volumes:
       - type: bind
         source: ./kibana/config/kibana.yml
