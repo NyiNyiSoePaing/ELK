@@ -112,3 +112,4 @@ To add plugins to any ELK component you have to:
 $ docker-compose down -v
 ```
 
+Fork From  https://github.com/deviantony/docker-elk
